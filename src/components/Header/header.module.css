@@ -1,0 +1,45 @@
+/*HEADER*/
+.header {
+    background-image: url("../../assets/banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/*IMG*/
+.header__img {
+    margin-top: 3rem;
+    width:23rem;
+    height:18rem;
+    border-radius:150px;
+}
+
+/*EFECTO MAQUINA DE ESCRIBIR*/
+.header__title {
+	margin: auto;
+	display: table;
+}
+
+.title { 
+	position: relative; 
+	float: left;
+	background: var(--secondary);
+	color: #fff;
+	font-size: 2.5em;
+}
+
+.title span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: var(--secondary);
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
